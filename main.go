@@ -10,4 +10,5 @@ fmt.Println("a divisão é", a / b)
 fmt.Println("a multiplicação é", a * b)
 fmt.Println("o resto da divisão é", a % b)
 
+
 }
