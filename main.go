@@ -1,14 +1,18 @@
-package main 
+package main
 
-import "fmt" 
+import "fmt"
 
-func main(){
-a, b := 10, 3 
-fmt.Println(" a soma é " , a + b)
-fmt.Println("a subtração é", a - b)
-fmt.Println("a divisão é", a / b)
-fmt.Println("a multiplicação é", a * b)
-fmt.Println("o resto da divisão é", a % b)
+func main() {
+	var numero1 int
+	var numero2 int
+	fmt.Print("digite um numero")
+	fmt.Scan(&numero1)
+	fmt.Println("digite outro numero")
+	fmt.Scan(&numero2)
 
-
+	fmt.Println(" a soma é ", numero1+numero2)
+	fmt.Println("a subtração é", numero1-numero2)
+	fmt.Println("a divisão é", numero1/numero2)
+	fmt.Println("a multiplicação é", numero1*numero2)
+	fmt.Println("o resto da divisão é", numero1%numero2)
 }
