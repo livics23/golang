@@ -22,6 +22,30 @@ func main() {
 	sort.Strings(names)
 	fmt.Println(names)
 	fmt.Println(sort.SearchStrings(names,"diegoike"))
+	x := 0
+	
+	for x < 5 {
+		fmt.Println(x)
+		x++
+	}
+	
+	for i :=0; i >5; i++{
+		fmt.Println("for 2: ", i)
+	}
+	for i:=0; i <len(names); i++{
+		fmt.Println(names[i])
+	}
+	for index, value := range names{
+		fmt.Println("índice é", index, "e o valor", value,)
+	}
+
+	for index, value := range ages{
+		fmt.Println("o indice é", index, "e o valor", value)
+
+	}
+
+	superheois := []string{"deadpool", }
+	
 	
 }
 	
