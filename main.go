@@ -1,37 +1,29 @@
 package main
 
 import ("fmt")
+func dividir(dividendo int, divisor int)(int, string){
+	if divisor == 0 {
+		return 0, "erro na divisão"
+	}
+return dividendo / divisor, ""
+}
+func operacaoBasica(a int, b int)(int, int, int){
+	soma:= a +b 
+	multiplicacao:= a * b
+	subtracao:= a - b 
+	return soma, multiplicacao, subtracao 
 
-var opção int
-var saldo int
+}
 
-
- func deposito() { 
-	 var deposito int 
-	 fmt.Println("digite o valor do deposito")
-	 fmt.Scan(&deposito)
-	 saldo = saldo + deposito
-	fmt.Println("seu saldo atual é:", saldo)
- }
-
- func saque() {
-	var saque int
-	fmt.Println("digite o valor do saque")
-	fmt.Scan(&saque)
-	saldo = saldo - saque
-	fmt.Println("seu saldo atual é:", saldo)
- }
- 
 func main(){
-fmt.Println("digite seu saldo atual")
-fmt.Scan(&saldo)
- fmt.Println("digite 1 para depositar e 2 para saque")
- fmt.Scan(&opção)
-
- if opção == 1 {
-	 deposito()
- } else if opção == 2 {
-	saque()
- } 
- 
+resultado, erro := dividir(10, 0)
+if erro != "sem erro" {
+	fmt.Println(erro)
+} else {
+	fmt.Println("o resultado da divisao é:", resultado)
+} 
+soma, mult, sub:= operacaoBasica(10, 2)
+fmt.Println(soma)
+fmt.Println(mult)
+fmt.Println(sub)
 }
